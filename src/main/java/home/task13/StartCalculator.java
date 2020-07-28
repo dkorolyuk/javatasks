@@ -45,8 +45,14 @@ public class StartCalculator {
         Scanner scan = new Scanner(System.in);
         expression = scan.nextLine();
         String [] expArr = expression.split(" ");
-        double val1 = Double.valueOf(expArr[0]);
-        double val2 = Double.valueOf(expArr[2]);
+        double val1 = 0;
+        double val2 = 0;
+        try {
+             val1 = Double.valueOf(expArr[0]);
+             val2 = Double.valueOf(expArr[2]);
+        } catch (RuntimeException e){
+            System.err.println("Invalid arguments");
+        }
         String operator = expArr[1];
 
         StartCalculator calculator = new StartCalculator();
