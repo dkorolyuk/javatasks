@@ -11,7 +11,7 @@ public class Task15 {
     public static void main(String[] args) {
         String path = "C:\\Users\\dkorolyuk\\Documents\\test\\new 2.txt";
         File f = new File(path);
-        String delimiter = "\\:|\\.|,?\"?-?;?!?\\??\\.?\\@?\\:?\\s?\\(?\\)?\\s\\(?|\\)";
+        String delimiter = "\\-|\\:|\\.|,?\"?-?;?!?\\??\\.?\\@?\\:?\\s?\\(?\\)?\\s\\(?|\\)";
         String str = "";
 
         //BufferedReader br;
